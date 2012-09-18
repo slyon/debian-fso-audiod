@@ -1,0 +1,71 @@
+Source: fso-audiod
+Section: misc
+Priority: extra
+Maintainer: Debian FreeSmartphone.Org Team <pkg-fso-maint@lists.alioth.debian.org>
+Uploaders: Lukas Märdian <luk@slyon.de>
+DM-Upload-Allowed: yes
+Build-Depends: debhelper (>= 9),
+               dh-autoreconf,
+               libfso-glib-dev (>= 2012.07.27.2),
+               libfsoframework-dev (>= 0.12.0~rc2),
+               libgee-dev (>= 0.5.0),
+               libglib2.0-dev (>= 2.26.0),
+               libvala-0.16-dev,
+               libsamplerate0-dev,
+               libasound2-dev,
+               pkg-config,
+               quilt,
+               valac-0.16
+Standards-Version: 3.9.3
+Homepage: http://freesmartphone.org/
+Vcs-Git: git://git.debian.org/git/pkg-fso/fso-audiod.git
+Vcs-Browser: http://git.debian.org/?p=pkg-fso/fso-audiod.git;a=summary
+
+Package: fso-audiod
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libasound2
+Recommends: fso-audiod-platform
+Description: freesmartphone.org Audio daemon
+ fsoaudiod implements the freesmartphone.org Audio API. It takes care
+ of Audio related functions.
+ .
+ The different platforms (e.g. the Goldelico GTA04) supported by
+ fso-audiod have custom lowlevel plugins, which are available in
+ optional packages.
+ .
+ This package is part of the freesmartphone.org software stack
+ and is targeted for smartphones.
+
+Package: fso-audiod-dbg
+Architecture: any
+Section: debug
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         fso-audiod (= ${binary:Version}),
+         fso-audiod-gta04 (= ${binary:Version})
+Description: debugging symbols for freesmartphone.org Audio daemon
+ fsoaudiod implements the freesmartphone.org Audio API. It takes care
+ of Audio related functions.
+ .
+ This package contains debugging symbols for fso-audiod, fso-audiod-gta04.
+
+Package: fso-audiod-gta04
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         fso-audiod (= ${binary:Version}),
+         libsamplerate0
+Provides: fso-audiod-platform
+Description: freesmartphone.org Audio daemon for the GTA04 device
+ fsoaudiod implements the freesmartphone.org Audio API. It takes care
+ of Audio related functions.
+ .
+ This package contains configuration files and plugins needed by
+ the GTA04 device.
+ .
+ This package is part of the freesmartphone.org software stack
+ and is targeted for smartphones.

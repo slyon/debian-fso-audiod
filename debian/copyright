@@ -1,0 +1,86 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: http://git.freesmartphone.org/?p=cornucopia.git;a=tree;f=fsogsmd
+
+Files: *
+Copyright: 2009-2011 Michael 'Mickey' Lauer <mlauer@vanille-media.de>
+           2010-2011 Simon Busch <morphis@gravedo.de>
+	   2010      Antonio Ospite <ospite@studenti.unina.it>
+	   2010      Denis 'GNUtoo' Carikli <GNUtoo@no-log.org>
+	   2011      Klaus 'mrmoku' Kurzmann <mok@fluxnetz.de>
+	   Lukas Märdian <lukasmaerdian@gmail.com>
+	   Radek Polak <psonek2@seznam.cz>
+License: GPL-2+
+
+Files: src/3rdparty/*
+Copyright: 2008-2010 Intel Corporation
+License: GPL-2
+
+Files: src/ppp/pppd-local.h
+Copyright: 1984-2000 Carnegie Mellon University
+License: BSD
+
+Files: debian/*
+Copyright: 2012 Lukas Märdian <luk@slyon.de>
+License: ISC
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License version 2 or any
+ newer version as published by the Free Software Foundation.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-2
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License version 2 as
+ published by the Free Software Foundation.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+License: BSD
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+ 3. The name "Carnegie Mellon University" must not be used to
+    endorse or promote products derived from this software without
+    prior written permission. For permission or any legal
+    details, please contact
+      Office of Technology Transfer
+      Carnegie Mellon University
+      5000 Forbes Avenue
+      Pittsburgh, PA  15213-3890
+      (412) 268-4387, fax: (412) 268-7395
+      tech-transfer@andrew.cmu.edu
+ 4. Redistributions of any form whatsoever must retain the following
+    acknowledgment:
+    "This product includes software developed by Computing Services
+     at Carnegie Mellon University (http://www.cmu.edu/computing/)."
+ .
+ CARNEGIE MELLON UNIVERSITY DISCLAIMS ALL WARRANTIES WITH REGARD TO
+ THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+ AND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE
+ FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+ AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+License: ISC
+ Permission to use, copy, modify, and/or distribute this software for any purpose with
+ or without fee is hereby granted, provided that the above copyright notice and this
+ permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD
+ TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN
+ NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+ IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.

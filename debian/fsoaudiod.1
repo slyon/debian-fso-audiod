@@ -1,0 +1,32 @@
+.TH FSOAUDIOD 1 "SEPTEMBER 18, 2012"
+.\" Please adjust this date whenever revising the manpage.
+.SH NAME
+fsoaudiod \- FSO audiod daemon
+.SH SYNOPSIS
+.B fsoaudiod
+.SH DESCRIPTION
+fsoaudiod implements the FSO Audio DBus API. This API delivers a simple way to
+handle audio scenarios. More precisely it handles the following things:
+
+* Manage audio modes
+.br
+* Manage audio devices
+.br
+* Organize (stack) audio scenarios
+.br
+* Manage volume
+
+fsoaudiod loads its configuration from
+/etc/freesmartphone/conf/<platform>/fsoaudiod.conf (platform is detected
+via /proc/cpuinfo). If this file can't be found it will fallback to
+/etc/freesmartphone/conf/default/fsoaudiod.conf instead.
+
+The daemon will be started automatically by DBus, once a request is send
+to it, but can also be started manually.
+.SH OPTIONS
+fsoaudiod takes no parameters.
+.SH AUTHOR
+fsoaudiod was written by the FSO Team <smartphones-userland@linuxtogo.org>.
+.PP
+This manual page was written by Lukas Märdian <luk@slyon.de>,
+for the Debian project (but may be used by others).

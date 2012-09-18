@@ -1,0 +1,11 @@
+etc/dbus-1/system.d/fsoaudiod.conf
+etc/freesmartphone/conf/default/*
+usr/sbin/*
+usr/lib/*/cornucopia/modules/fsoaudio/libfsoaudio.so
+usr/lib/*/cornucopia/modules/fsoaudio/manager.so
+usr/lib/*/cornucopia/modules/fsoaudio/router_alsa.so
+usr/lib/*/cornucopia/modules/fsoaudio/sessionpolicy_default.so
+usr/lib/*/cornucopia/modules/fsoaudio/streamcontrol_alsa.so
+usr/lib/*/cornucopia/modules/fsoaudio/system_integration.so
+usr/lib/*/alsa-lib/*
+usr/share/dbus-1/system-services/org.freesmartphone.oaudiod.service

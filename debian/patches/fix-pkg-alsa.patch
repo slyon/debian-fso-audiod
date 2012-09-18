@@ -1,0 +1,80 @@
+commit 46e440cb5ae5dd65c32746642101b0eda699a015
+Author: Lukas Märdian <lukasmaerdian@gmail.com>
+Date:   Fri Jul 13 00:42:57 2012 +0200
+
+    fix pkg alsa
+    
+    Signed-off-by: Lukas Märdian <lukasmaerdian@gmail.com>
+
+diff --git a/src/plugins/gsmvoice_alsa_forwarder/Makefile.am b/src/plugins/gsmvoice_alsa_forwarder/Makefile.am
+index d5932dc..419e0b8 100644
+--- a/src/plugins/gsmvoice_alsa_forwarder/Makefile.am
++++ b/src/plugins/gsmvoice_alsa_forwarder/Makefile.am
+@@ -26,6 +26,7 @@ gsmvoice_alsa_forwarder_la_VALAFLAGS = \
+ 	--vapidir $(top_srcdir)/vapi \
+ 	--pkg glib-2.0 \
+ 	--pkg gee-1.0 \
++	--pkg alsa \
+ 	--pkg fso-glib-1.0 \
+ 	--pkg fsoframework-2.0 \
+ 	--pkg fsoaudio-2.0
+diff --git a/src/plugins/manager/Makefile.am b/src/plugins/manager/Makefile.am
+index 470ce3c..dd454b3 100644
+--- a/src/plugins/manager/Makefile.am
++++ b/src/plugins/manager/Makefile.am
+@@ -21,6 +21,7 @@ manager_la_VALAFLAGS = \
+ 	--vapidir $(top_srcdir)/vapi \
+ 	--pkg glib-2.0 \
+ 	--pkg gee-1.0 \
++	--pkg alsa \
+ 	--pkg fso-glib-1.0 \
+ 	--pkg fsoframework-2.0 \
+ 	--pkg fsoaudio-2.0 \
+diff --git a/src/plugins/router_alsa/Makefile.am b/src/plugins/router_alsa/Makefile.am
+index 3a00c82..386bf6f 100644
+--- a/src/plugins/router_alsa/Makefile.am
++++ b/src/plugins/router_alsa/Makefile.am
+@@ -22,6 +22,7 @@ router_alsa_la_VALAFLAGS = \
+ 	--pkg glib-2.0 \
+ 	--pkg gee-1.0 \
+ 	--pkg fso-glib-1.0 \
++	--pkg alsa \
+ 	--pkg fsoframework-2.0 \
+ 	--pkg fsoaudio-2.0 \
+ 	$(DEBUG_VALAFLAGS) \
+diff --git a/src/plugins/sessionpolicy_default/Makefile.am b/src/plugins/sessionpolicy_default/Makefile.am
+index 48de9f3..9471dbf 100644
+--- a/src/plugins/sessionpolicy_default/Makefile.am
++++ b/src/plugins/sessionpolicy_default/Makefile.am
+@@ -21,6 +21,7 @@ sessionpolicy_default_la_VALAFLAGS = \
+ 	--vapidir $(top_srcdir)/vapi \
+ 	--pkg glib-2.0 \
+ 	--pkg gee-1.0 \
++	--pkg alsa \
+ 	--pkg fso-glib-1.0 \
+ 	--pkg fsoframework-2.0 \
+ 	--pkg fsoaudio-2.0
+diff --git a/src/plugins/streamcontrol_alsa/Makefile.am b/src/plugins/streamcontrol_alsa/Makefile.am
+index 4fb13c2..8c6b00f 100644
+--- a/src/plugins/streamcontrol_alsa/Makefile.am
++++ b/src/plugins/streamcontrol_alsa/Makefile.am
+@@ -21,6 +21,7 @@ streamcontrol_alsa_la_VALAFLAGS = \
+ 	--vapidir $(top_srcdir)/vapi \
+ 	--pkg glib-2.0 \
+ 	--pkg gee-1.0 \
++	--pkg alsa \
+ 	--pkg fso-glib-1.0 \
+ 	--pkg fsoframework-2.0 \
+ 	--pkg fsoaudio-2.0 \
+diff --git a/src/plugins/system_integration/Makefile.am b/src/plugins/system_integration/Makefile.am
+index 2faa4d7..bb141e8 100644
+--- a/src/plugins/system_integration/Makefile.am
++++ b/src/plugins/system_integration/Makefile.am
+@@ -21,6 +21,7 @@ system_integration_la_VALAFLAGS = \
+ 	--vapidir $(top_srcdir)/vapi \
+ 	--pkg glib-2.0 \
+ 	--pkg gee-1.0 \
++	--pkg alsa \
+ 	--pkg fso-glib-1.0 \
+ 	--pkg fsoframework-2.0 \
+ 	--pkg fsoaudio-2.0 \
