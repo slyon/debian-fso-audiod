@@ -1,4 +1,4 @@
 [D-BUS Service]
 Name=org.freesmartphone.oaudiod
-Exec=/usr/local/sbin/fsoaudiod
+Exec=/home/morphis/Workspace/fso-new/buildroot/install/sbin/fsoaudiod
 User=root
